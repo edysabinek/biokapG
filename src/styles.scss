@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+/* CSS HEX */
+/*--paradiso: #358583;
+--black-haze: #eaecec;
+--granny-smith: #8b9796;
+--dove-gray: #696767;
+--cod-gray: #0f0f0f;
+--edward: #b4b9b8;
+--chelsea-cucumber: #7cb04d;
+--silver-chalice: #a4a3a3;
+--silver: #c4c3c3;
+--swamp-green: #b0c49a;
+
+
+/* SCSS HEX */
+$paradiso: #358583;
+$black-haze: #eaecec;
+$granny-smith: #8b9796;
+$dove-gray: #696767;
+$cod-gray: #0f0f0f;
+$edward: #b4b9b8;
+$chelsea-cucumber: #7cb04d;
+$silver-chalice: #a4a3a3;
+$silver: #c4c3c3;
+$swamp-green: #b0c49a;
+
+
+/* SCSS RGB */
+/*--paradiso: rgba(53,133,131,1);
+--black-haze: rgba(234,236,236,1);
+--granny-smith: rgba(139,151,150,1);
+--dove-gray: rgba(105,103,103,1);
+--cod-gray: rgba(15,15,15,1);
+--edward: rgba(180,185,184,1);
+--chelsea-cucumber: rgba(124,176,77,1);
+--silver-chalice: rgba(164,163,163,1);
+--silver: rgba(196,195,195,1);
+--swamp-green: rgba(176,196,154,1);*/
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
