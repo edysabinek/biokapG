@@ -1,0 +1,25 @@
+<div class="card product-card">
+    <div class="card-body product-card-body">
+        <img class="img-vsm-100 product-img" [src]="produit.photo" [alt]="produit.nom" />
+        <div class="ml-4 ml-vsm-2 product-presentation w-100">
+            <span class="product-name ff-merienda fs-vsm-15">{{ produit.nom}}</span>
+            <br>
+            <span class="fs-vsm-10">
+                <span class="product-weight text-gray-500">{{ produit.poids}} g</span>
+                <span class="product-price text-gray-500"> &bull; {{produit.prix}} Fcfa</span>
+            </span>
+            
+            <p class="product-desc mt-md-3 fs-vsm-13">{{ produit.description }}</p>
+            
+        </div>
+    </div>
+    
+    <!--<div class="disponibilite product-dispo fs-vsm-10" *ngIf="produit.disponibilite">
+        <span>Disponible</span>
+    </div>-->
+    <div class="disponibilite product-indispo fs-vsm-10" *ngIf="!produit.disponibilite">
+        <span>En rupture</span>
+    </div>
+
+    
+</div>

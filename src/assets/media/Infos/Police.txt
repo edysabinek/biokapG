@@ -1,0 +1,10 @@
+La police qui correspond : Merienda
+
+Pour les icones : https://redketchup.io/icon-converter
+Trouver la police dans l'image : https://www.whatfontis.com/?s3
+Trouver la palette de l'image : https://imagecolorpicker.com/user/palettes
+Bootstrap for Angular : https://ng-bootstrap.github.io/#/getting-started
+Modals pour angular : https://www.freecodecamp.org/news/how-to-add-bootstrap-css-framework-to-an-angular-application/
+https://edysabinek.github.io/biokapG/
+
+scss : https://weekendprojectsA.dev/posts/sass-error-cant-find-stylesheet-to-import/

@@ -1,0 +1,153 @@
+<div class="container-fluid page-content" id="acceuil">
+    <div class="bloc">
+        <div class="bloc-title row justify-content-center w-100">
+            <h2 class="ff-merienda w-auto d-inline-flex">
+                <span>Qui sommes nous</span>
+                <div class="to-rotate mx-2" [@rotatedState]='state' (@rotatedState.done)="onEnd($event)" >?</div>
+            </h2>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-push-6 col-md-6 to-reverse">
+                <img class="img-presentation" src="../../assets/media/team/5278.jpg" alt="biokap-team"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 to-reverse">
+                <h4 class="bloc-subtitle mb-lg-5 mb-sm-3 mt-md-2"> Une jeune startup spécialisée dans le bien-être!</h4>
+                <p class="text-justify">
+                    Constituée de 8 à 10 Collaborateurs, Bio Kit's And Parfaite Group ou encore <strong class="ff-merienda biokap">  BIOKAP G </strong>
+                    offre une large gamme de produits et services dont l'objectif est d'assurer le bien être du client. 
+                    <br>
+
+                    Fondée en 2019, elle est basée à l'est du Cameroun en plein centre-ville de la ville de Bertoua. 
+                    Elle aide à lutter contre le chômage ambiant dans la région et ambitionne de s’étendre sur toute l’étendue du territoire Camerounais et même à l'international.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc mt-sm-4 hide">
+        <div class="bloc-title row justify-content-center w-100 pb-3">
+            <h2 class="ff-merienda w-auto d-inline-flex">
+                <span>Nos domaines d'expertise</span>
+                <div class="to-rotate mx-2" > ...</div>
+            </h2>
+        </div>
+
+        <div class="mt-2 row align-items-center">
+            
+            <div class="col-md-6">
+                <img class="img-presentation" src="../../assets/media/team/Entretien-question-equipe-recrutement-722x361.jpeg" alt="biokap-team"/>
+            </div>
+            <div class="col-md-6">
+                <h4 class=" bloc-subtitle mb-lg-3 mb-sm-3 mt-md-2"> Une startup agissant autour de trois pôles d'expertise!</h4>
+                <p class="text-justify">
+                    <strong class="ff-merienda biokap"> BIOKAP G </strong> a décidé de concentrer son activité dans : 
+                </p>
+
+                <ol>
+                <li>Le commerce</li>
+                <ul>
+                        <p class="text-justify"> 
+                            Elle commercialise des plantes, légumes, épices et fruits déshydratés puis transformés et conditionnés pour être conservables plus longtemps.
+                            Étant issus de l'agriculture locale et biologiques, ces produits offrent donc de nombreux bénéfices pour la santé.
+                        </p>
+                </ul> 
+                <li> La masso-kinésithérapie</li>
+                <ul>
+                        <p>
+                            Elle offre des prestations de masso-kinésithérapie axé essentiellement autour du massage,
+                            de la rééducation, de la relaxation, de la remise en forme, de la cryothérapie et bien d'autres choses.
+                        </p>
+                </ul>
+                <li> L'assainissement des eaux</li>
+                <ul>
+                        <p>
+                            Elle conditionne, assainit et potabilise les sources naturelles d’eau pour approvisionner les foyers en eau potable.
+                            <br>
+                            Elle oeuvre aussi dans la sensibilisation et la formation aux questions de l’approvisionnement en eau, de la santé et de l’hygiène;
+                        </p>
+                </ul>
+                </ol>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bloc mt-sm-4">
+        <div class="bloc-title row justify-content-center w-100 pb-3 pb-lg-5">
+            <h2 class="ff-merienda w-auto d-inline-flex">
+                <span>Nos domaines d'expertise</span>
+                <div class="to-rotate mx-2" > ...</div>
+            </h2>
+        </div>
+
+        <div class="mt-2 row align-items-center">
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-b-green">
+                        <span class="material-symbols-outlined icon">shopping_cart_checkout</span>
+                        <h4 class="card-title">Le commerce</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Nous commercialisons des plantes, légumes, épices et fruits déshydratés puis transformés et conditionnés pour être conservables plus longtemps.
+                            Étant issus de l'agriculture locale et biologique, ces produits offrent de nombreux bénéfices pour la santé.
+                        </p>
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-b-paradiso">
+                        <span class="material-symbols-outlined icon">health_metrics</span>
+                        <h4 class="card-title">La masso-kinésithérapie</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Nous offrons des prestations de masso-kinésithérapie axés essentiellement autour du massage,
+                            de la rééducation, de la relaxation, de la remise en forme, de la cryothérapie et bien d'autres choses.
+                        </p>
+                    </div>
+            
+                </div>
+            </div>
+           
+           <div class="col-md-4">
+            <div class="card">
+                <div class="card-header text-center text-b-blue-sky">
+                    <span class="material-symbols-outlined icon">water</span>
+                    <h4 class="card-title">L'assainissement des eaux</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Nous conditionnons les sources naturelles d’eau, l'assainissons et la rendons potable pour approvisionner les foyers.
+                        <br>
+                        Nous oeuvrons aussi dans la sensibilisation et la formation aux questions de l’approvisionnement en eau, de la santé et de l’hygiène;
+                    </p>
+                </div>
+        
+            </div>
+           </div>
+
+        </div>
+    </div>
+    
+    <div class="card hide">
+        <div class="card-header text-center text-b-middle">
+            <span class="material-symbols-outlined icon">shopping_cart_checkout</span>
+            <h4 class="card-title">Le commerce</h4>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                Nous commercialisons des plantes, légumes, épices et fruits déshydratés puis transformés et conditionnés pour être conservables plus longtemps.
+                Étant issus de l'agriculture locale et biologique, ces produits offrent de nombreux bénéfices pour la santé.
+            </p>
+        </div>
+
+    </div>
+</div>

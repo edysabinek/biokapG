@@ -1,0 +1,243 @@
+/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+/* Importing Fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Poppins&family=Karla&display=swap');
+
+/* Importing color variables SCSS file. */
+@import '../src/assets/sass/variables';
+
+html {
+    min-height: 100%;
+}
+body {
+    overflow-x: scroll;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    //font-family: 'Times New Roman', Times, serif !important;
+    //font-family: 'Montserrat', sans-serif; //bold
+    //font-family: 'Lora', sans-serif;
+    font-family: 'Karla';
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    &.page-content {
+        padding : 2rem;
+        padding-bottom: 60px; //hauteur du footer
+    }
+    
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.hide {
+    display: none;
+}
+
+.shadow-gray {
+    box-shadow: 0px 6px 20px rgba(97, 96, 99, 0.15); 
+    -webkit-box-shadow: 0px 6px 20px rgba(97, 96, 99, 0.15);
+}
+
+.ff-merienda {
+    font-family: 'Merienda';
+}
+
+.ff-poppin {
+    font-family: 'Poppins';
+}
+
+.text-gray-500 {
+    color: $gray;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-b-blue {
+    color: $blue;
+}
+
+.text-b-blue-sky {
+    color: $blue-sky;
+}
+
+.text-b-green {
+    color: $chelsea-cucumber;
+}
+
+.text-b-paradiso {
+    color: $paradiso;
+}
+
+.text-b-neptune {
+    color: $neptune;
+}
+
+.text-b-swamp-green {
+    color: $swamp-green;
+}
+
+.text-b-valid {
+    color: $valid;
+}
+
+strong {
+    &.biokap {
+        background-color: $primary;
+        //background-image: linear-gradient(to right, $primary, $secondary);
+        background-image: linear-gradient(to right, $primary, deepskyblue);
+        background-clip: text;
+
+          /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+}
+
+/*.elementor-divider-separator {
+    border-top-width: 10px;
+    //border-radius: 5px;
+    width: 75px;
+    height: 10px;
+    background: $primary;
+    //background: linear-gradient(to right, forestgreen, deepskyblue);
+}*/
+
+.ml-4 {
+    margin-left: 1.5rem !important;
+}
+// small
+@media (min-width: 576px) {
+    
+    .nav-sm {
+        width: min-content;
+    }
+    
+    .nav-link {
+        font-size: 20px !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-expand-sm {
+        .navbar-nav {
+            .nav-item {
+                padding-left: 0.5rem;
+                &:not(:last-child) {
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+//Très petit
+@media (max-width: 576px) {
+    .nav-sm {
+        width: 100%;
+    }
+    .header-logo {
+        width: 15%;
+    }
+
+    .bloc:not(:first-child) {
+        padding-top: 2rem;
+    }
+
+    .img-vsm-100 {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .mt-vsm-2 {
+        margin-top: 0.5rem !important;
+    }
+    .ml-vsm-2 {
+        margin-left: 0.5rem !important;
+    }
+
+    .fs-vsm-10 {
+        font-size: 10px !important;
+    }
+
+    .fs-vsm-15 {
+        font-size: 15px !important;
+    }
+
+    .fs-vsm-13 {
+        font-size: 13px !important;
+    }
+    
+    .mb-vsm-3{
+        margin-bottom: 1rem !important;
+    }
+
+    .mb-vsm-4{
+        margin-bottom: 1.5rem !important;    }
+
+    .product-card {
+        min-height: 150px;
+    }
+}
+
+//medium
+@media (min-width: 768px) {
+    .col-md-push-6 {
+        left: 50%;
+    }
+  
+    .col-md-pull-6 {
+        right: 50%;
+    }
+
+    .to-reverse {
+        position: relative;
+    }
+
+    .product-card {
+        .product-card-body {
+            padding: 1rem 2rem !important;
+        }
+
+        .disponibilite {
+            margin: 1rem 2rem !important;
+        }
+    }
+
+    
+}
+
+// large
+@media (min-width: 992px) { 
+    .nav-link {
+        font-size: 22px !important;
+    }
+    .mb-lg-5 {
+        margin-bottom: 3rem !important;
+    }
+}
+
+//xl
+@media (min-width: 1200px) {
+    .col-lg-push-6 {
+      left: 50%;
+    }
+
+    .col-lg-pull-6 {
+        right: 50%;
+    }
+}

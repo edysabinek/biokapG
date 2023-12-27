@@ -1,0 +1,13 @@
+<div class="bloc mt-sm-4 mb-4">
+    <div class="bloc-title row justify-content-center w-100 pb-3">
+        <h2 class="ff-merienda w-auto d-inline-flex cat-label mb-4">
+            <span>{{categorieProduit.label}}</span>
+        </h2>
+        <!-- innerHTML permet de rendre le contenu de la variable au formatage html-->
+        <p class="text-center" [innerHTML]="categorieProduit.resume"></p>
+    </div>
+
+    <div class="d-inline-flex flex-wrap justify-content-center">
+        <app-products *ngFor="let produit of categorieProduit.listeProduits" [produit]="produit"></app-products>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="d-flex menu-bar shadow-gray flex-row justify-content-between">
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <div class="navbar-header nav-sm d-inline-flex justify-content-between">
+                <a href="#" class="navbar-brand">
+                    <img class="header-logo circle" src="../../assets/media/logo/logo_couleur.jpg" alt="logo"/>
+                </a>
+                <button (click)="onNavButtonClick()" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>                       
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" [ngbCollapse]="toggleNavbar">
+                <!-- Links -->
+                <ul class="nav navbar-nav w-100 justify-content-end">
+                    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <a class="nav-link" href="#" routerLink="" >Acceuil</a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" href="#" routerLink="products" >Produits</a>
+                    </li>
+                    <!--<li ngbDropdown class="nav-item dropdown" routerLinkActive="active">
+                        <a class="nav-link" ngbDropdownToggle role="button" id="produitDropdown" >Produits</a>
+                        <ul class="dropdown-menu" ngbDropdownMenu="produitDropdown">
+                            <li ngbDropdownItem><a class="dropdown-item" routerLink="products">Fruits</a></li>
+                            <li ngbDropdownItem><a class="dropdown-item" routerLink="products">Thé & Épices</a></li>
+                            <!--<li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>--!>
+                        </ul>
+                    </li>-->
+                    <li ngbDropdown class="nav-item">
+                        <a class="nav-link" ngbDropdownToggle id="serviceDropdown" role="button">Services</a>
+                        <ul class="dropdown-menu" ngbDropdownMenu="serviceDropdown">
+                            <li ngbDropdownItem><a class="dropdown-item" href="#">Masso-Kinésithérapie</a></li>
+                            <li ngbDropdownItem><a class="dropdown-item" href="#">Assainissement</a></li>
+                            <!--<li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

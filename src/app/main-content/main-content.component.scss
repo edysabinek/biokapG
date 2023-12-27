@@ -1,0 +1,53 @@
+@import '../../assets/sass/variables';
+div {
+    /*&.bloc-title {
+        /*:not(:first-child) {
+            //margin: 0.5rem 0 1rem; //top right&left bottom 
+            padding-bottom: 1rem;
+        }
+        
+    }*/
+
+    &.bloc {
+        //margin: 0.5rem 0 1rem; //top right&left bottom;
+        //padding: 0 0 1rem;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    > .bloc-subtitle {
+        padding-bottom: 0.5rem;
+    }
+
+    &.card {
+        min-height: 306px;
+        height: 100%;
+        margin-bottom: 2rem;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.101251);
+        border: none;
+        text-align: justify;
+        border-radius: 15px;
+
+        /*&:hover {
+            transform: scaleY(1);
+            transition: transform 330ms ease-in-out;
+        }*/
+
+        .card-header {
+            background-color: transparent;
+            border-bottom: none;
+
+            .card-title {
+                font-weight: 600;
+            }
+        }
+
+        span.icon {
+            font-weight: 600;
+            font-size: 70px;
+        }
+    }
+}

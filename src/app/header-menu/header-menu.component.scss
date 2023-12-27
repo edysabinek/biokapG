@@ -1,0 +1,57 @@
+@import '../../assets/sass/variables';
+*.container-fluid {
+    div {
+        padding: 0 1rem 0 1rem; //top right bottom left
+    }
+}
+.menu-bar {
+    height: 10%;
+    width: 100%;
+    //background-color: $primary;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 70px;
+    //position: fixed;
+
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-item {
+        //padding: 10px 5px;
+        &.active {
+            border-bottom: 3px solid $primary;
+
+            .nav-link {
+                //background-color: $swamp-green;
+                //box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.101251);
+                //border-radius: 10px;
+                //border-bottom: 3px solid $blue;
+                color: $primary;
+            }
+        }
+        &:not(.active) {
+            .nav-link {
+                &:hover {
+                    color: $hover-primary;
+                }
+            }   
+        }
+        &:hover {
+            transform: scaleX(1);
+        }
+        .nav-link {
+            //font-weight: bold;
+            color: black;
+            font-size: 18px;
+            padding: 3px 10px; //top&bottom right&left
+        }    
+    }
+}
+
+.header-logo {
+    width: 10%;
+    min-width: 48px;
+}
